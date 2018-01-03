@@ -1,0 +1,12 @@
+h1 {color: blue;}
+
+
+/* this is an example of a class*/
+.author {
+	font-style: italic;
+}
+
+/*This is an example of an ID*/
+#desc {
+	font-style: italic;
+}
