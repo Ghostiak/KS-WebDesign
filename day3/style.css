@@ -1,0 +1,48 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  background-color: #B82D34;
+}
+
+.bar, .barBlack, .barRed {
+  position: absolute;
+  height: 275px;
+  width: 60px;
+ 
+}
+
+.barBlack{
+	background-color: #191919;
+	margin-top: 175px
+}
+
+.barRed{
+	background-color: #8E292D;
+}
+
+.event{
+	background: rgba(255,0,0,1);
+}
+
+section{}
+
+
+#grid, .imgGrid{
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-gap: 0px;
+    margin-top: 200px;
+    margin-left: 75px;
+    transform: rotate(45deg);
+
+}
+
+#grid .event:nth-child(9){
+    grid-column-start: 0;
+    grid-column-end: 8;
+    display: none;
+
+
+}
+
