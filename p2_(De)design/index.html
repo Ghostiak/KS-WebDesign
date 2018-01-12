@@ -12,23 +12,34 @@
 
 <body>
 
-<form action="ready.php">
-  <p>
-    <input type="radio" id="test1" name="start" value="ready" checked>
-    <label for="test1">I'm ready.</label>
-  </p>
-  <p>
-    <input type="radio" id="test2" name="start" value="ready">
-    <label for="test2">Okay, let's go.</label>
-  </p>
-  <p>
-    <input type="radio" id="test3" name="start" value="notReady">
-    <label for="test3">I'm not ready.</label>
-  </p>
-  <input type="submit">
-</form> 
+	<section id="flexbox">
 
+		<div class="event wide">
+			<div class="bubble">Hello, new user. Are you ready to start?</div>
+		</div>
 
+		<div class="event small">
+			<form action="ready.php">
+			  <p>
+			    <input type="radio" id="test1" name="start" value="ready" checked>
+			    <label for="test1">Please, I'd rather not.</label>
+			  </p>
+			  <p>
+			    <input type="radio" id="test2" name="start" value="ready">
+			    <label for="test2">I can't do it.</label>
+			  </p>
+			  <p>
+			    <input type="radio" id="test3" name="start" value="notReady">
+			    <label for="test3">No.</label>
+			  </p>
+			  <div class="submit">
+			  	<button type="button" onclick="step2.html">→</button> 
+			  </div>
+			  
+			</form>
+		</div>
+
+	</section> 
 
 </body>
 
