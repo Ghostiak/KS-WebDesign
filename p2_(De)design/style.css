@@ -155,7 +155,7 @@ section{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 10%;
+    left: 25%;
     width: 0;
     height: 0;
     border: 20px solid transparent;
@@ -166,4 +166,11 @@ section{
 }
 
 
-
+/* figure */
+.fig{
+    position: absolute;
+    bottom:20px;
+    left:10px;
+    height:200px; 
+    width:200px;
+}
