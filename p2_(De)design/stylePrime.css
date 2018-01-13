@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+
+body {
+  margin: 0;
+  color: #ddd;
+  background-color: #0f0f0f;
+
+  font-family: 'Pompiere', cursive;
+}
+
+.glow {
+  color:#ddd;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20%;
+  background: #0f0f0f;
+  padding: 10px 15px;
+  width: 100px;
+  height:100px;
+ transition: .4s ease-out;
+  cursor:pointer;
+  border:1px solid #555;
+  border-radius:10px;
+  
+}
+.glow:hover {
+  border-color:#ddd;
+  box-shadow:0 0 10px rgba(255,222,255,.5);
+}

@@ -11,14 +11,15 @@ body, html {
 }
 
 button{
-    float:right;
+    position: absolute;
     width:30px;
     height:30px;
     background-color:#0f0f0f;
     border-radius: 100%;
     border: 1px solid #2d2d2d;
 
-    margin-top: 100%;
+    bottom:40px;
+    right:40px;
 
     color: #4f4f4f;
     text-align: center;
@@ -108,13 +109,13 @@ section{
     left: 50%;
 
     margin: -230px 0 0 -380px;
-
-
     background-color: #0f0f0f;
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0px 50px 0 rgba(0, 0, 0, .7), 
                 0 0px 50px 0 rgba(0, 0, 0, .7);
+
+
 }
 
 #flexbox{
@@ -163,3 +164,6 @@ section{
     margin-left: -20px;
     margin-bottom: -20px;
 }
+
+
+
