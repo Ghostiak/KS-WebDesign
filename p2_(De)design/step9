@@ -17,12 +17,12 @@
 		<div class="event wide">
 			<div class="bubble">
 				<div class="typewriter">
-					How quaint you are. Now, how are you height wise?
+					Which of these letters appears first in your last?
 				</div>
 			</div>
 
 			<div class="fig">
-				<img src="https://github.com/Ghostiak/KS-WebDesign/blob/master/p2_(De)design/gifs/smile.gif?raw=true" alt="Strange Figure">
+				<img src="https://github.com/Ghostiak/KS-WebDesign/blob/master/p2_(De)design/gifs/fullBlink.gif?raw=true" alt="Strange Figure">
 			</div>
 
 		</div>
@@ -31,19 +31,27 @@
 			<form action="ready.php">
 			  <p>
 			    <input type="radio" id="test1" name="start" value="ready" >
-			    <label for="test1">Tall.</label>
+			    <label for="test1">a</label>
 			  </p>
 			  <p>
 			    <input type="radio" id="test2" name="start" value="ready">
-			    <label for="test2">Short.</label>
+			    <label for="test2">e</label>
 			  </p>
 			  <p>
 			    <input type="radio" id="test3" name="start" value="ready">
-			    <label for="test3">None of the above.</label>
+			    <label for="test3">i</label>
+			  </p>
+			  <p>
+			    <input type="radio" id="test4" name="start" value="ready">
+			    <label for="test4">o</label>
+			  </p>
+			  <p>
+			    <input type="radio" id="test5" name="start" value="ready">
+			    <label for="test5">u</label>
 			  </p>
 			</form>
 				<div class="submit">
-			  	<a href="https://ghostiak.github.io/KS-WebDesign/p2_(De)design/step9.html"><button type="button">→</button></a>
+			  	<a href="https://ghostiak.github.io/KS-WebDesign/p2_(De)design/step10.html"><button type="button">→</button></a>
 			  </div>
 
 		</div>
