@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>jQuery Demo</title>
+    <title>Kai's Work</title>
     <meta content="a repository for sample code" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="style.css" rel="stylesheet">
@@ -20,6 +20,106 @@
 
 </head>
 <body>
-    
+
+
+
+
+<!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p><iframe src="https://ghostiak.github.io/KS-WebDesign/p1_type/index.html"></iframe></p>
+    </div>
+  </div>
+
+<section id="grid2">
+    <div class="event2">
+      <div class="header">
+        <div class="textbox">
+            <br><br>
+            <h1>Winter Web Design 2018</h1>
+            <p>K &nbsp;a &nbsp;i &nbsp;&nbsp;&nbsp; S &nbsp;t &nbsp;e &nbsp;w &nbsp;a &nbsp;r &nbsp;t</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="event2">
+        <section id="grid">
+      <div class="event">
+        <h3>Project 1</h3>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">View</button>
+      </div>
+      <div class="event">
+        <h3>Project 2</h3>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">View</button>
+      </div>
+      <div class="event">
+        <h3>Event Title 3</h3>
+        <h4>Event Time</h4>
+        <p>Place</p>
+        <p>Description</p>
+      </div>
+      <div class="event">
+        <h3>Event Title 4</h3>
+        <h4>Event Time</h4>
+        <p>Place</p>
+        <p>Description</p>
+      </div>
+      <div class="event">
+        <h3>Event Title 5</h3>
+        <h4>Event Time</h4>
+        <p>Place</p>
+        <p>Description</p>
+      </div>
+      <div class="event">
+        <h3>Event Title 6</h3>
+        <h4>Event Time</h4>
+        <p>Place</p>
+        <p>Description</p>
+      </div>
+      <div class="event">
+        <h3>Event Title 7</h3>
+        <h4>Event Time</h4>
+        <p>Place</p>
+        <p>Description</p>
+      </div>
+    </section>
+
+    </div>
+  </section>
+
+
+  
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </body>
 </html>
