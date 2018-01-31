@@ -6,9 +6,14 @@
 /* font-family: 'Roboto Slab', serif; */
 
 body{
-    background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
-	background-size: cover;
+    
+	background: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: Helvetica, sans-serif;
+    margin: 0
 }
 
 h1{
@@ -17,16 +22,18 @@ h1{
 }
 
 h3{
-    color: white;
+    color: #242938;
     font-family: 'Patua One', cursive;
 }
 
+
 .header{
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-image: url("https://cdn.pixabay.com/photo/2017/03/30/20/25/polygon-2189646_960_720.jpg");
     border-radius: 5px;
     background-size: cover; 
+    padding: 50px 0px;
 
     color: white;
     font-family: 'Patua One', cursive;
@@ -34,9 +41,13 @@ h3{
 }
 
 .desc{
+    position: relative;
     margin-top: -60px;
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    margin-bottom: 10px;
+    opacity: 1;
+    z-index: 20;
 }
 
 .event{
@@ -47,11 +58,13 @@ h3{
 }
 
 .event img{
+    position: relative;
+    border-radius: 9px 9px 0px 0px;
     max-height: 100px;
     width: 100%;
-    padding: -20px;
-
     size: cover;
+    opacity: .7;
+    z-index: 1;
 
 }
 
@@ -93,6 +106,7 @@ section{
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px;
 
+    margin-top: 3%;
     max-width: 70%;
     min-width: 500px;
     margin-left: auto;
@@ -106,30 +120,23 @@ section{
     display: none;
 }
 
-.btn-group button {
-    background-color: pink;
+button {
+    background-color: #99a9c4;
     color: white;
     border: 1px solid white;
-    padding: 10px 24px; /* Some padding */
+    padding: 8px;/* Some padding */
     float: left; /* Float the buttons side by side */
+    border-radius: 5px;
+
+    margin-left: 2px;
+
+    font-size: 10px;
 
     transition: background-color 1s ease;
 }
-
-.btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 /* Add a background color on hover */
-.btn-group button:hover {
-    background-color: #d9e28e;
+button:hover {
+    background-color: #63347c;
 }
 
 button:focus {outline:0;}
