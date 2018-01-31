@@ -11,25 +11,14 @@ body{
     font-family: Helvetica, sans-serif;
 }
 
-iframe{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	top: 0px;
-	left: 0px;
-	border: 0px;
-	overflow: hidden;
-}
-
 h1{
     font-size: 4vw;
     line-height: 0px;
 }
 
-p{
-    font-family: 'Roboto Slab', serif;
+h3{
+    color: white;
+    font-family: 'Patua One', cursive;
 }
 
 .header{
@@ -44,20 +33,26 @@ p{
     text-align: center;  
 }
 
-.textBox{
-    margin-top: 50%;
+.desc{
+    margin-top: -60px;
+    width: 100%;
+    padding: 10px;
 }
 
 .event{
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.5);
     border: 2px solid white;
-    padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 .event img{
+    max-height: 100px;
     width: 100%;
+    padding: -20px;
+
+    size: cover;
+
 }
 
 section{
@@ -111,91 +106,33 @@ section{
     display: none;
 }
 
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s
-}
-
-/* Modal Content */
-.modal-content {
-    position: absolute;
-    background-color: black;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    margin: auto;
-
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    background-color: rgba(0,0,0,.5);
-    color: white;
-    margin: 5px;
-    border-radius: 5px;
-    padding: 5px;
-
-    right: 0px;
-    line-height: 15px;
-    font-size: 28px;
-    font-weight: bold;
-    z-index: 9999;
-
-    -webkit-transition: opacity .5s; /* For Safari 3.1 to 6.0 */
-    transition: opacity .5s;
-}
-
-.close:hover,
-.close:focus {
-    opacity: .5;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-#myBtn{
+.btn-group button {
     background-color: pink;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 24px; /* Some padding */
+    float: left; /* Float the buttons side by side */
+
+    transition: background-color 1s ease;
 }
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #d9e28e;
+}
+
+button:focus {outline:0;}
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
@@ -218,3 +155,43 @@ section{
     to {opacity: 1}
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.fade {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+.lightbox{
+    background-color: pink;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.light {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+
+    padding: 10px;
+    border: 0px solid #FFF;
+    background: #CCC;
+    z-index:1002;
+    overflow: hidden;
+}
