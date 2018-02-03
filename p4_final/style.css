@@ -86,18 +86,46 @@ body {
 
   .bubbleR {
   float: right;
-  height: 100px;
-  width: 300px;
+  min-width: 300px;
   margin-right: 10%;
   background: #c0c0c0;
   border-radius: .4em;
+  padding: 20px;
 }
 
   .bubbleL {
   float: left;
-  height: 100px;
-  width: 300px;
+   min-width: 300px;
   margin-left: 10%;
   background: #c0c0c0;
   border-radius: .4em;
+  padding: 20px;
+}
+
+.event{
+    background: rgba(255,0,0,0);
+    border: 0px solid tomato;
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.event img{
+    width: 100%;
+}
+
+section{
+    border: 0px solid blue;
+}
+
+/*Floated layout*/
+#floated{
+    overflow: auto;
+}
+#floated .event{
+    float: left;
+    width: 100%;
+}
+
+.tall{
+    height: 500px;
 }
