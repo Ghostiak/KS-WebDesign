@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<title>Semideus</title>
+<meta content="A journey" name="description">
+<meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+<link href="style.css" rel="stylesheet">
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript" src="jquery4.js"></script>
+<script type="text/javascript" src="jqueryUI.js"></script>
+     
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+  
+  <figure id="mouse-pointer"></figure>
+  <div class="grab"><img src="img/hand.png" height="400px"></div>
+
+
+<script>
+  $(document).mousemove(function(e) {
+     $(".grab").offset({
+      left: e.pageX,
+      top: e.pageY + 05
+    });
+  });
+</script>
+
+    </body>
