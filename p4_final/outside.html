@@ -11,15 +11,21 @@
 <script type="text/javascript" src="ajax.js"></script>
 <script type="text/javascript" src="jquery4.js"></script>
 <script type="text/javascript" src="jqueryUI.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+  </head>
      
 </head>
 
 <body>
+<div class="tablet">
   <script src="sketch.js"></script>
-  
-  <figure id="mouse-pointer"></figure>
-  <div class="grab"><img src="img/hand.png" height="400px"></div>
-
+</div>
+<div class="noselect">
+  <div class="grab"><img src="img/hand.png" height="500px"></div>
+</div>
 
 <script>
   $(document).mousemove(function(e) {

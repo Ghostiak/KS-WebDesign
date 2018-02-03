@@ -7,6 +7,8 @@
     <meta content="A journey" name="description">
 
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+
     <link href="style.css" rel="stylesheet">
     <link href="aos.css" rel="stylesheet">
     <!-- <script src="sketch.js"></script> -->
@@ -14,7 +16,7 @@
 
 <body>
 
-    <script src="sketch.js"></script>
+    
 <div class="parallax-container">
     <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
     <div class="parallax-layer layer-1" data-parallax-speed="0.15" data-max-scroll="565"></div>
@@ -31,9 +33,38 @@
 
     <img src="img/content.png" style="margin-top:-100px; width: 100%;">
 
-    <div class="bubbleR" data-aos="fade-left" data-aos-duration="1500"></div>
-    <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500"></div>
-
+    <section id="floated">
+    <div class="event">
+      <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500">The internet makes humans feel powerful.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleR" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250">Really? How stange.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250">I think it is becuase there they can say most anything.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleL2" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250">Control things. Be anybody. You know?</div>
+    </div>
+    <div class="event">
+      <div class="bubbleR" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250">I guess so. Maybe that's why I think it's so boring?</div>
+    </div>
+    <div class="event">
+      <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250">Haha, yeah. It's hard to get into memes when you can shape the fabric of the universe.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleR" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250">Pretty much.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleR2" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250">Speaking of, I think I'm gonna go "out" for a bit.</div>
+    </div>
+    <div class="event">
+      <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250">Ok, have fun.</div>
+    </div>
+    <div class="event">
+      <img src="img/sky.png" data-aos="fade" data-aos-duration="2500" data-aos-offset="450">
+    </div>
+  </section>
   </div>
 
 
@@ -44,6 +75,9 @@
 <script type="text/javascript">
   AOS.init();
 </script>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript" src="jquery4.js"></script>
+<script type="text/javascript" src="jqueryUI.js"></script>
   </body>
 
 </html>
