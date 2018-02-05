@@ -1,4 +1,4 @@
-
+var bg;
 // All the paths
 var paths = [];
 // Are we painting?
@@ -10,13 +10,16 @@ var current;
 var previous;
 
 function setup() {
-  createCanvas(720, 400);
+  bg = loadImage("img/night.png");
+  createCanvas(1440, 900);
+  
   current = createVector(0,0);
   previous = createVector(0,0);
 };
 
 function draw() {
-  background(200);
+  background(bg);
+  background(0);
   
   // If it's time for a new point
   if (millis() > next && painting) {
