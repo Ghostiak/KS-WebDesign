@@ -8,13 +8,6 @@ body {
 a {
 }
 
-.nextButton{
-  position: absolute;
-  background-color: red;
-  width: 100px;
-  height: 100px;
-}
-
 .parallax-container {
   position: fixed;
   overflow: visible;
