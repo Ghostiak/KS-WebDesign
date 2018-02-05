@@ -134,6 +134,7 @@ a {
     background: #0b0b18;
     border: 0px solid tomato;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .event img{
