@@ -11,7 +11,12 @@ var previous;
 
 function setup() {
   bg = loadImage("img/night.png");
-  createCanvas(900, 900);
+
+
+  var cnv = createCanvas(900, 700);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
   
   current = createVector(0,0);
   previous = createVector(0,0);
