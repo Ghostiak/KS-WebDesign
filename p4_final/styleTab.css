@@ -24,12 +24,14 @@ section{
 }
 
 .box{
-    width: 80%;
-    position: absolute;
+  width: 80%;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0px 0 0 0px;
+  align-content: center;
+  z-index: 1;
 }
 
 }
