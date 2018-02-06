@@ -1,4 +1,3 @@
-var notes = [ 60, 62, 64, 65, 67, 69, 71];
 var bg;
 // All the paths
 var paths = [];
@@ -21,27 +20,7 @@ function setup() {
   
   current = createVector(0,0);
   previous = createVector(0,0);
-
-  // A triangle oscillator
-  osc = new p5.TriOsc();
-  // Start silent
-  osc.start();
-  osc.amp(0);
 };
-
-// A function to play a note
-function playNote(note, duration) {
-  osc.freq(midiToFreq(note));
-  // Fade it in
-  osc.fade(0.5,0.2);
-
-  // If we sest a duration, fade it out
-  if (duration) {
-    setTimeout(function() {
-      osc.fade(0,0.2);
-    }, duration-50);
-  }
-}
 
 function draw() {
   background(bg);
@@ -151,16 +130,4 @@ Particle.prototype.display = function(other) {
   if (other) {
     line(this.position.x, this.position.y, other.position.x, other.position.y);
   }
-}
-
-// When we click
-function mousePressed() {
-  // Map mouse to the key index
-  var key = floor(map(mouseX, 0, width, 0, notes.length));
-  playNote(notes[key]);
-}
-
-// Fade it out when we release
-function mouseReleased() {
-  osc.fade(0,0.5);
 }
