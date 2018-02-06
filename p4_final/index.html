@@ -36,6 +36,7 @@
 
     <section id="floated">
     <div class="event">
+      <audio id="scrollaudio" src="sound/tweetPause.mp3"></audio>
       <div class="bubbleL" data-aos="fade-right" data-aos-duration="1500">The internet makes humans feel powerful.</div>
     </div>
     <div class="event">
@@ -86,6 +87,13 @@
 <script type="text/javascript" src="ajax.js"></script>
 <script type="text/javascript" src="jquery4.js"></script>
 <script type="text/javascript" src="jqueryUI.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="AudioFade.js"></script>
+<script>
+$(function() {
+var first = new AudioFade('#scrollaudio', 100, 10, 100).init();
+});
+</script>
   </body>
 
 </html>
